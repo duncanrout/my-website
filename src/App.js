@@ -2,20 +2,18 @@ import React, { Component } from 'react'
 import './App.css'
 import 'w3-css/w3.css'
 import Sidebar from './components/Sidebar'
+import SidebarSmall from './components/SidebarSmall'
 import Main from './components/Main'
+import MainSmall from './components/MainSmall'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div class="w3-cell-row">
-          <div class="w3-container w3-black w3-cell w3-cell-top">
-            <Sidebar></Sidebar>
-          </div>
-          <div class="w3-container w3-black w3-cell w3-cell-bottom">
-            <Main></Main>
-          </div>
-        </div>
+      <div class="w3-black">
+        <Sidebar></Sidebar>
+        <SidebarSmall></SidebarSmall>
+        <Main></Main>
+        <MainSmall></MainSmall>
       </div>
     );
   }
